@@ -1,6 +1,6 @@
 ## MyServer
-To run server:
--`go build` in the myServer directory.
+Running server:
+- `go build` in the myServer directory.
 - Then `go run main.go`
   
 ### System Design:
