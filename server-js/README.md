@@ -1,5 +1,5 @@
 # Authentication Server:
-- HTTP server in Node.js which will handle the logic of an authentication server.
+- HTTP server in Node.js which handles the logic of an authentication server.
 - Save the users and their signup/login data in an array in a variable.
 - To test the server - run `npm run test-authServer` command in terminal
 ## API Endpoints:
@@ -14,3 +14,14 @@
 - ### GET /data
   - Fetch all user's names and ids from the server
   - **Response:** 200 OK with the data in JSON format if the username and password in headers are valid, or 401 Unauthorized if the username and password are missing or invalid.
+
+
+# File Server:
+- HTTP server in Node.js which handles the logic of a file server using builtin `fs` module.
+## API Endpoints:
+- ### GET /files
+  - Returns a list of files present in `./files/` directory
+  - **Response:** 200 OK with an array of file names.
+- ### GET /file/:filename
+  - Returns content of file given in param filename.
+  - **Response:** 200 OK with the file content if file is found else 404 `File not found`.
