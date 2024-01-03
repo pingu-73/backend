@@ -19,8 +19,43 @@ function files(req, res){
     fs.readdir('./files/', fileList(res));
 }
 
-app.get('/files', files);
 
+
+
+
+
+
+function fileContent(res){
+    return function(err, data){
+        if (err){
+           res.status(404).send("File not found");
+        }
+        else{
+            res.status(200).send(data);
+        }
+    }
+}
+
+function contents(req, res){
+    var file = path.join('./files/', req.params.filename);
+    fs.readFile(file, 'utf-8', fileContent(res));
+}
+
+
+
+
+
+
+function invalidPath(req, res){
+  res.status(404).send('Route not found');
+}
+
+
+
+
+app.get('/files', files);
+app.get('/file/:filename', contents);
+app.all('*', invalidPath);
 
 
     
