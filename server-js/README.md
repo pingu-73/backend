@@ -45,4 +45,7 @@
   - **Response:** 200 OK if the todo item was found and updated, or 404 Not Found.
 - ### DELETE /todos/:id
   - Deletes a todo item identified by its ID.
-  - **Response:** 200 OK if the todo item was found and deleted, or 404 Not Found 
+  - **Response:** 200 OK if the todo item was found and deleted, or 404 Not Found
+ 
+# Todo Server (File):
+- Storing all the data in `todo.json` file.
