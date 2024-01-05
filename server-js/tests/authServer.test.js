@@ -1,5 +1,5 @@
 const http = require('http');
-const server = require('../authServer');
+const server = require('../src/authServer');
 
 const email = 'user@gmail.com';
 const password = 'testuser';

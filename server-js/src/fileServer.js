@@ -16,7 +16,7 @@ function fileList(res){
 }
 
 function files(req, res){
-    fs.readdir('./files/', fileList(res));
+    fs.readdir('../files/', fileList(res));
 }
 
 
@@ -37,7 +37,7 @@ function fileContent(res){
 }
 
 function contents(req, res){
-    var file = path.join('./files/', req.params.filename);
+    var file = path.join('../files/', req.params.filename);
     fs.readFile(file, 'utf-8', fileContent(res));
 }
 
