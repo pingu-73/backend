@@ -28,6 +28,7 @@
  
 # Todo Server:
 - Storing all the data in an array to store the todo list data (in-memory).
+- To test this server run `npm run test-todoServer` command in terminal.
 ## API Endpoints: 
 - ### GET /todos
   - Returns a list of all todo items
