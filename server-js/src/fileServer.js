@@ -59,7 +59,8 @@ app.all('*', invalidPath);
 
 
     
-function started(){
-    console.log(`app listening on ${PORT}`)
-}
-app.listen(PORT, started)
+// function started(){
+//     console.log(`app listening on ${PORT}`)
+// }
+// app.listen(PORT, started)
+module.exports = app;

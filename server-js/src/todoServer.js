@@ -83,7 +83,8 @@ app.post('/todos', create);
 app.put('/todos/:id', update);
 app.delete('/todos/:id', removeTodo);
     
-function started(){
-    console.log(`app listening on ${PORT}`)
-}
-app.listen(PORT, started)
+// function started(){
+//     console.log(`app listening on ${PORT}`)
+// }
+// app.listen(PORT, started)
+module.exports = app;
